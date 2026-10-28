@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SR Calculator – free scientific calculator for every device</title>
+<meta name="description" content="Free calculator with a numbers-only mode and a full scientific mode, plus matrix, equation, number, BMI, percentage and loan tools, and printable, shareable history. Works on phones, tablets and computers.">
+<meta name="theme-color" content="#151a24">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SR Calculator – free scientific calculator">
+<meta property="og:description" content="Basic and scientific calculator with history and memory. Accessible, private and free on any device.">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://YOUR-USERNAME.github.io/srcalculator/">
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/srcalculator/">
+<meta name="google-site-verification" content="PASTE-CODE-HERE-IF-GOOGLE-ASKS">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"SR Calculator","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","description":"Free scientific and basic calculator with history and memory.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"isAccessibleForFree":true}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0e121a;--panel:#171c27;--key:#212838;--key-hi:#2b3448;--fn:#1a2030;
+  --ink:#f3efe6;--mute:#a4acbd;--gold:#e2b857;--gold-d:#b98b2e;--on-gold:#1a1405;
+  --danger:#ff8b7e;--line:#2c3447;--focus:#8fd0ff;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  color-scheme:dark;box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:light){
+  :root:not([data-theme="dark"]){
+    --bg:#e9edf4;--panel:#fbfcfe;--key:#e4e9f2;--key-hi:#d3dbea;--fn:#eef1f7;
+    --ink:#141a26;--mute:#4b5568;--gold:#8a5f0c;--gold-d:#6e4a06;--on-gold:#fff;
+    --danger:#b3261e;--line:#cfd6e4;--focus:#0b57d0;color-scheme:light;
+  }
+}
+:root[data-theme="light"]{
+  --bg:#e9edf4;--panel:#fbfcfe;--key:#e4e9f2;--key-hi:#d3dbea;--fn:#eef1f7;
+  --ink:#141a26;--mute:#4b5568;--gold:#8a5f0c;--gold-d:#6e4a06;--on-gold:#fff;
+  --danger:#b3261e;--line:#cfd6e4;--focus:#0b57d0;color-scheme:light;
+}
+:root[data-theme="dark"]{color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font:400 16px/1.5 var(--sans);-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--gold);color:var(--on-gold);padding:8px 14px;border-radius:8px;z-index:20}
+.skip:focus{left:8px}
+header{display:flex;flex-wrap:wrap;position:relative;align-items:center;gap:12px;max-width:1040px;margin:0 auto;padding:16px 16px 8px}
+.brand{display:flex;align-items:center;gap:12px;margin-right:auto}
+.brand img{width:48px;height:48px;border-radius:12px;display:block}
+.brand h1{margin:0;font:700 1.5rem/1.1 var(--serif);letter-spacing:.01em}
+.brand p{margin:2px 0 0;color:var(--mute);font-size:.875rem}
+.tool{min-width:44px;height:44px;padding:0 14px;border-radius:12px;border:1px solid var(--line);background:var(--panel);font-weight:600}
+.tool:hover{background:var(--key)}
+.tool[aria-pressed="true"]{border-color:var(--gold);color:var(--gold)}
+main{max-width:1040px;margin:0 auto;padding:8px 16px 32px;display:grid;gap:16px;grid-template-columns:minmax(0,1fr);align-items:start}
+.calc{background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:16px;width:100%;max-width:440px;margin:0 auto;box-shadow:0 18px 40px rgba(0,0,0,.28)}
+.calc.sci{max-width:760px}
+.screen{background:var(--bg);border-radius:16px;padding:12px 16px;margin-bottom:14px;border:1px solid var(--line)}
+.screen .meta{display:flex;gap:10px;min-height:24px;font-size:.8125rem;color:var(--mute);font-weight:600}
+.screen .meta span{padding:0 8px;border-radius:6px;border:1px solid var(--line)}
+#expr{width:100%;background:transparent;border:0;color:var(--ink);font:600 clamp(1.5rem,6vw,2.1rem)/1.3 var(--sans);text-align:right;padding:4px 0;font-variant-numeric:tabular-nums}
+#expr:focus-visible{outline-offset:4px;border-radius:6px}
+#out{min-height:2rem;text-align:right;font:700 1.25rem/1.6 var(--sans);color:var(--gold);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+#out.err{color:var(--danger)}
+.pads{display:grid;gap:10px}
+.calc.sci .pads{grid-template-columns:minmax(0,5fr) minmax(0,4fr)}
+.calc:not(.sci) .sciPad{display:none}
+.pad{display:grid;gap:8px}
+.sciPad{grid-template-columns:repeat(5,1fr)}
+.mainPad{grid-template-columns:repeat(4,1fr)}
+.k{min-height:56px;border-radius:14px;border:0;background:var(--key);font-weight:700;font-size:1.125rem;transition:background .15s,transform .08s}
+.k:hover{background:var(--key-hi)}
+.k:active{transform:scale(.96)}
+.k.fn{background:var(--fn);font-size:.95rem;color:var(--mute);border:1px solid var(--line)}
+.k.fn:hover{background:var(--key-hi);color:var(--ink)}
+.k.fn[aria-pressed="true"]{color:var(--gold);border-color:var(--gold)}
+.k.op{color:var(--gold)}
+.k.eq{background:var(--gold);color:var(--on-gold)}
+.k.eq:hover{background:var(--gold-d);color:#fff}
+.k.clr{color:var(--danger)}
+aside{background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:16px;width:100%;max-width:440px;margin:0 auto}
+aside[hidden]{display:none}
+aside h2{margin:0;font:700 1.25rem var(--serif)}
+.hhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+#hist{list-style:none;margin:0;padding:0;max-height:420px;overflow:auto}
+#hist li button{width:100%;text-align:right;background:none;border:0;border-bottom:1px solid var(--line);padding:10px 4px;border-radius:0}
+#hist li button:hover{background:var(--key)}
+#hist small{display:block;color:var(--mute);font-size:.875rem;overflow-wrap:anywhere}
+#hist b{color:var(--gold);font-size:1.125rem;overflow-wrap:anywhere}
+.empty{color:var(--mute);margin:8px 0}
+.link{background:none;border:0;color:var(--gold);font-weight:600;text-decoration:underline;padding:8px;min-height:44px}
+.help{max-width:1040px;margin:0 auto;padding:0 16px 40px;color:var(--mute)}
+.help summary{cursor:pointer;font-weight:700;color:var(--ink);padding:10px 0;min-height:44px}
+.help dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;max-width:560px}
+.help dt{font-weight:700;color:var(--ink)}.help dd{margin:0}
+kbd{background:var(--key);border:1px solid var(--line);border-radius:6px;padding:1px 7px;font:600 .875rem var(--sans)}
+#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:999px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .2s;z-index:30}
+#toast.on{opacity:1}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (min-width:900px){
+  main{grid-template-columns:minmax(0,1fr) 340px;justify-items:center}
+  #views .calc{margin:0 0 0 auto}
+  main.solo{grid-template-columns:minmax(0,1fr)}
+  main.solo #views .calc{margin:0 auto}
+  main aside{margin:0 auto 0 0}
+  #histBtn{display:none}
+}
+@media (max-width:420px){.k{min-height:52px;font-size:1.05rem}.sciPad{gap:6px}.brand p{display:none}}
+@media (max-width:759px){.calc.sci .pads{grid-template-columns:1fr}.calc.sci .sciPad{order:2}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media (forced-colors:active){.k,.tool{border:1px solid ButtonText}.k.eq{background:Highlight;color:HighlightText}}
+#menu{position:absolute;top:100%;left:16px;z-index:15;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:8px;min-width:250px;box-shadow:0 18px 40px rgba(0,0,0,.35);display:grid;gap:2px}
+#menu[hidden],.hact[hidden]{display:none}
+#menu button{background:none;border:0;text-align:left;padding:12px 14px;border-radius:10px;min-height:44px;font-weight:600}
+#menu button:hover{background:var(--key)}
+#menu button[aria-current="true"]{color:var(--gold);background:var(--fn)}
+.tool-card h2{margin:0 0 12px;font:700 1.4rem var(--serif)}
+.tool-card h3{margin:22px 0 8px;font:700 1.05rem var(--sans)}
+.f{display:grid;gap:4px;font-weight:600;font-size:.9rem;color:var(--mute);margin-bottom:10px}
+.f input,.f select,.mg input{width:100%;min-width:0;min-height:46px;padding:8px 12px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:600 1rem var(--sans)}
+.mg{display:grid;gap:6px;margin-bottom:8px}.mg input{text-align:center;padding:4px 6px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.row3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.res{white-space:pre-line;color:var(--gold);font-weight:700;font-size:1.1rem;min-height:1.6rem;overflow-wrap:anywhere}
+.res.err{color:var(--danger)}
+.res table{border-collapse:collapse;margin:6px 0}.res td{border:1px solid var(--line);padding:6px 12px;text-align:right;font-variant-numeric:tabular-nums}
+.lbl{margin:8px 0 6px;font-weight:600;color:var(--mute);font-size:.9rem}
+.note{color:var(--mute);font-size:.85rem;margin:0 0 8px}
+.hact{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.hact .tool{height:40px;padding:0 12px;font-size:.9rem}
+#hist li{display:flex;align-items:stretch}
+#hist li button:first-child{flex:1}
+#hist li button.mini{width:auto;flex:none;text-align:center;color:var(--gold);font-weight:600;padding:0 12px}
+#printArea{display:none}
+@media print{body>*:not(#printArea){display:none!important}body::before{display:none}body{background:#fff}
+#printArea{display:block;color:#000;font-family:var(--sans)}#printArea table{width:100%;border-collapse:collapse}#printArea td,#printArea th{border-bottom:1px solid #888;padding:6px;text-align:left}}
+</style>
+</head>
+<body>
+<a class="skip" href="#expr">Skip to calculator</a>
+<header>
+  <button class="tool" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+  <div class="brand">
+    <img src="data:image/png;base64,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" alt="" width="48" height="48">
+    <div><h1>SR Calculator</h1><p>Simple on the surface, scientific underneath</p></div>
+  </div>
+  <button class="tool" id="histBtn" type="button" aria-expanded="false" aria-controls="histPanel">History</button>
+  <button class="tool" id="modeBtn" type="button" aria-pressed="false">Full calculator</button>
+  <button class="tool" id="shareBtn" type="button" aria-label="Share this calculator">Share</button>
+  <button class="tool" id="themeBtn" type="button" aria-label="Switch colour theme">Theme</button>
+  <nav id="menu" aria-label="Choose a calculator" hidden>
+    <button type="button" data-v="calc" aria-current="true">Calculator</button>
+    <button type="button" data-v="matrix">Matrix</button>
+    <button type="button" data-v="eq">Equations</button>
+    <button type="button" data-v="num">Number tools</button>
+    <button type="button" data-v="bmi">BMI</button>
+    <button type="button" data-v="pct">Percentage</button>
+    <button type="button" data-v="emi">Loan (EMI)</button>
+  </nav>
+</header>
+
+<main id="top">
+ <div id="views">
+  <section class="calc" id="calc" aria-label="Calculator">
+    <h2 class="vh" tabindex="-1">Calculator</h2>
+    <div class="screen">
+      <div class="meta" aria-hidden="true"><span id="angTag">DEG</span><span id="memTag" hidden>M</span></div>
+      <label class="vh" for="expr">Expression</label>
+      <input id="expr" type="text" inputmode="none" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="0" dir="ltr">
+      <output id="out" aria-live="polite"></output>
+      <button class="link" id="cpRes" type="button">Copy result</button>
+    </div>
+    <div class="pads">
+      <div class="pad sciPad" role="group" aria-label="Scientific keys">
+        <button class="k fn" type="button" id="k2nd" aria-pressed="false">2nd</button>
+        <button class="k fn" type="button" data-ins="(" aria-label="Open bracket">(</button>
+        <button class="k fn" type="button" data-ins=")" aria-label="Close bracket">)</button>
+        <button class="k fn" type="button" id="kAng" aria-label="Angle mode: degrees">Deg</button>
+        <button class="k fn" type="button" data-ins="^" aria-label="Power">xʸ</button>
+        <button class="k fn" type="button" data-ins="²" aria-label="Square">x²</button>
+        <button class="k fn" type="button" data-ins="³" aria-label="Cube">x³</button>
+        <button class="k fn" type="button" data-ins="!" aria-label="Factorial">x!</button>
+        <button class="k fn" type="button" data-ins="√(" aria-label="Square root">√</button>
+        <button class="k fn" type="button" data-ins="^(1/" aria-label="Y-th root: type the root, then close the bracket">ʸ√x</button>
+        <button class="k fn" type="button" data-ins="sin(" data-alt="asin(" data-label="sin" aria-label="Sine">sin</button>
+        <button class="k fn" type="button" data-ins="cos(" data-alt="acos(" data-label="cos" aria-label="Cosine">cos</button>
+        <button class="k fn" type="button" data-ins="tan(" data-alt="atan(" data-label="tan" aria-label="Tangent">tan</button>
+        <button class="k fn" type="button" data-ins="ln(" data-alt="e^(" data-label="ln" aria-label="Natural logarithm">ln</button>
+        <button class="k fn" type="button" data-ins="log(" data-alt="10^(" data-label="log" aria-label="Logarithm base 10">log</button>
+        <button class="k fn" type="button" data-ins="π" aria-label="Pi">π</button>
+        <button class="k fn" type="button" data-ins="e" aria-label="Euler’s number">e</button>
+        <button class="k fn" type="button" data-ins="1/(" aria-label="Reciprocal">1/x</button>
+        <button class="k fn" type="button" data-ins="abs(" aria-label="Absolute value">|x|</button>
+        <button class="k fn" type="button" data-ins="random()" aria-label="Random number">Rand</button>
+        <button class="k fn" type="button" data-mem="mc" aria-label="Memory clear">mc</button>
+        <button class="k fn" type="button" data-mem="m+" aria-label="Memory add">m+</button>
+        <button class="k fn" type="button" data-mem="m-" aria-label="Memory subtract">m−</button>
+        <button class="k fn" type="button" data-mem="mr" aria-label="Memory recall">mr</button>
+        <button class="k fn" type="button" data-ins="%" aria-label="Percent">%</button>
+      </div>
+      <div class="pad mainPad" role="group" aria-label="Number keys">
+        <button class="k clr" type="button" id="kAC" aria-label="All clear">AC</button>
+        <button class="k fn" type="button" id="kDel" aria-label="Delete last character">⌫</button>
+        <button class="k op" type="button" data-ins="(" id="kBr" aria-label="Open bracket">(</button>
+        <button class="k op" type="button" data-ins="÷" aria-label="Divide">÷</button>
+        <button class="k" type="button" data-ins="7">7</button>
+        <button class="k" type="button" data-ins="8">8</button>
+        <button class="k" type="button" data-ins="9">9</button>
+        <button class="k op" type="button" data-ins="×" aria-label="Multiply">×</button>
+        <button class="k" type="button" data-ins="4">4</button>
+        <button class="k" type="button" data-ins="5">5</button>
+        <button class="k" type="button" data-ins="6">6</button>
+        <button class="k op" type="button" data-ins="−" aria-label="Subtract">−</button>
+        <button class="k" type="button" data-ins="1">1</button>
+        <button class="k" type="button" data-ins="2">2</button>
+        <button class="k" type="button" data-ins="3">3</button>
+        <button class="k op" type="button" data-ins="+" aria-label="Add">+</button>
+        <button class="k" type="button" id="kSign" aria-label="Change sign">±</button>
+        <button class="k" type="button" data-ins="0">0</button>
+        <button class="k" type="button" data-ins="." aria-label="Decimal point">.</button>
+        <button class="k eq" type="button" id="kEq" aria-label="Equals">=</button>
+      </div>
+    </div>
+  </section>
+
+    <section class="calc tool-card" id="v-matrix" hidden aria-labelledby="t-matrix">
+    <h2 id="t-matrix" tabindex="-1">Matrix calculator</h2>
+    <div class="row2"><label class="f">Size<select id="mN"><option value="2">2 × 2</option><option value="3">3 × 3</option><option value="4">4 × 4</option></select></label>
+    <label class="f">Operation<select id="mOp"><option value="det">Determinant of A</option><option value="inv">Inverse of A</option><option value="tr">Transpose of A</option><option value="add">A + B</option><option value="sub">A − B</option><option value="mul">A × B</option></select></label></div>
+    <p class="lbl">Matrix A</p><div class="mg" id="mA"></div>
+    <div id="mBwrap"><p class="lbl">Matrix B</p><div class="mg" id="mB"></div></div>
+    <div class="res" id="r-m" aria-live="polite"></div><button class="link cp" type="button" data-cp="m">Copy result</button>
+  </section>
+  <section class="calc tool-card" id="v-eq" hidden aria-labelledby="t-eq">
+    <h2 id="t-eq" tabindex="-1">Equation solver</h2>
+    <label class="f">Type<select id="eqT"><option value="q">Quadratic equation</option><option value="l1">Linear equation (one unknown)</option><option value="l2">Two linear equations (x and y)</option></select></label>
+    <div id="eqIn"></div>
+    <div class="res" id="r-eq" aria-live="polite"></div><button class="link cp" type="button" data-cp="eq">Copy result</button>
+  </section>
+  <section class="calc tool-card" id="v-num" hidden aria-labelledby="t-num">
+    <h2 id="t-num" tabindex="-1">Number tools</h2>
+    <h3>Convert between bases</h3>
+    <div class="row2"><label class="f">Number<input id="nbV" type="text" autocomplete="off" spellcheck="false"></label>
+    <label class="f">Written in<select id="nbF"><option value="10">Decimal</option><option value="2">Binary</option><option value="8">Octal</option><option value="16">Hexadecimal</option></select></label></div>
+    <div class="res" id="r-nb" aria-live="polite"></div><button class="link cp" type="button" data-cp="nb">Copy result</button>
+    <h3>Prime check and factors</h3>
+    <label class="f">Whole number<input id="pnV" type="number" inputmode="numeric" step="1"></label>
+    <div class="res" id="r-pn" aria-live="polite"></div><button class="link cp" type="button" data-cp="pn">Copy result</button>
+    <h3>GCD and LCM</h3>
+    <label class="f">Numbers, separated by commas<input id="glV" type="text" inputmode="text" placeholder="12, 18, 24" autocomplete="off"></label>
+    <div class="res" id="r-gl" aria-live="polite"></div><button class="link cp" type="button" data-cp="gl">Copy result</button>
+  </section>
+  <section class="calc tool-card" id="v-bmi" hidden aria-labelledby="t-bmi">
+    <h2 id="t-bmi" tabindex="-1">BMI calculator</h2>
+    <label class="f">Units<select id="bU"><option value="m">Metric (kg, cm)</option><option value="i">Imperial (lb, in)</option></select></label>
+    <div class="row2"><label class="f"><span id="bWl">Weight (kg)</span><input id="bW" type="number" step="any" inputmode="decimal"></label>
+    <label class="f"><span id="bHl">Height (cm)</span><input id="bH" type="number" step="any" inputmode="decimal"></label></div>
+    <div class="res" id="r-bmi" aria-live="polite"></div><button class="link cp" type="button" data-cp="bmi">Copy result</button>
+    <p class="note">For adults. BMI is a general guide, not a medical diagnosis.</p>
+  </section>
+  <section class="calc tool-card" id="v-pct" hidden aria-labelledby="t-pct">
+    <h2 id="t-pct" tabindex="-1">Percentage calculator</h2>
+    <h3>Percent of a number</h3>
+    <div class="row2"><label class="f">Percent<input id="p1a" type="number" step="any" inputmode="decimal"></label><label class="f">Of<input id="p1b" type="number" step="any" inputmode="decimal"></label></div>
+    <div class="res" id="r-p1"></div>
+    <h3>What percent is it?</h3>
+    <div class="row2"><label class="f">Part<input id="p2a" type="number" step="any" inputmode="decimal"></label><label class="f">Whole<input id="p2b" type="number" step="any" inputmode="decimal"></label></div>
+    <div class="res" id="r-p2"></div>
+    <h3>Increase or decrease</h3>
+    <div class="row2"><label class="f">From<input id="p3a" type="number" step="any" inputmode="decimal"></label><label class="f">To<input id="p3b" type="number" step="any" inputmode="decimal"></label></div>
+    <div class="res" id="r-p3" aria-live="polite"></div><button class="link cp" type="button" data-cp="p1 p2 p3">Copy results</button>
+  </section>
+  <section class="calc tool-card" id="v-emi" hidden aria-labelledby="t-emi">
+    <h2 id="t-emi" tabindex="-1">Loan (EMI) calculator</h2>
+    <label class="f">Loan amount<input id="lP" type="number" step="any" inputmode="decimal"></label>
+    <div class="row2"><label class="f">Interest per year (%)<input id="lR" type="number" step="any" inputmode="decimal"></label>
+    <label class="f">Term<input id="lN" type="number" step="any" inputmode="decimal"></label></div>
+    <label class="f">Term in<select id="lU"><option value="y">Years</option><option value="m">Months</option></select></label>
+    <div class="res" id="r-emi" aria-live="polite"></div><button class="link cp" type="button" data-cp="emi">Copy result</button>
+  </section>
+ </div>
+  <aside id="histPanel" aria-labelledby="hTitle" hidden>
+    <div class="hhead"><h2 id="hTitle">History</h2></div>
+    <div class="hact" id="hact">
+      <button class="tool" id="cpAll" type="button">Copy all</button>
+      <button class="tool" id="shHist" type="button">Share</button>
+      <button class="tool" id="prHist" type="button">Print</button>
+      <button class="tool" id="clrHist" type="button">Clear</button>
+    </div>
+    <ul id="hist"></ul>
+    <p class="empty" id="histEmpty">Your calculations will appear here. They stay on this device only.</p>
+  </aside>
+</main>
+
+<details class="help">
+  <summary>Keyboard shortcuts and tips</summary>
+  <dl>
+    <dt><kbd>Enter</kbd></dt><dd>Calculate</dd>
+    <dt><kbd>Esc</kbd></dt><dd>Clear everything</dd>
+    <dt><kbd>*</kbd> <kbd>/</kbd> <kbd>-</kbd></dt><dd>Type as usual; they become × ÷ −</dd>
+    <dt><kbd>Alt</kbd>+<kbd>H</kbd></dt><dd>Show or hide history</dd>
+    <dt>2nd</dt><dd>Switches sin, cos, tan, ln and log to their inverses</dd>
+    <dt>Deg / Rad</dt><dd>Sets the angle unit for trigonometry</dd>
+  </dl>
+  <p>Everything runs in your browser. Nothing you calculate is sent anywhere.</p>
+</details>
+<div id="printArea" aria-hidden="true"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"></script>
+<script>
+(function(){
+  var $=function(s){return document.querySelector(s)},all=function(s){return Array.prototype.slice.call(document.querySelectorAll(s))};
+  var expr=$('#expr'),out=$('#out'),calc=$('#calc'),root=document.documentElement;
+  var deg=true,second=false,memory=0,hist=[],justSolved=false;
+  function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+
+  /* ---------- evaluation ---------- */
+  function toRad(x){return deg?x*Math.PI/180:x}
+  function fromRad(x){return deg?x*180/Math.PI:x}
+  function ev(src){
+    if(typeof math==='undefined')throw new Error('Math engine is not loaded. Check your connection and reload.');
+    var s=src.replace(/×/g,'*').replace(/÷/g,'/').replace(/−/g,'-').replace(/π/g,'pi')
+      .replace(/√/g,'sqrt').replace(/²/g,'^2').replace(/³/g,'^3')
+      .replace(/(\d+\.?\d*|\))%/g,'($1/100)')
+      .replace(/\bln\(/g,'log(').replace(/\blog\(/g,'log10(');
+    var open=(s.match(/\(/g)||[]).length,close=(s.match(/\)/g)||[]).length;
+    for(;open>close;close++)s+=')';
+    var scope={sin:function(x){return math.sin(toRad(x))},cos:function(x){return math.cos(toRad(x))},tan:function(x){return math.tan(toRad(x))},
+      asin:function(x){return fromRad(math.asin(x))},acos:function(x){return fromRad(math.acos(x))},atan:function(x){return fromRad(math.atan(x))}};
+    var r=math.evaluate(s,scope);
+    if(typeof r==='number'&&!isFinite(r))throw new Error('Result is not a finite number');
+    if(typeof r==='function'||r===undefined||(r&&r.entries))throw new Error('Incomplete expression');
+    return r;
+  }
+  function fmt(r){
+    var t=math.format(r,{precision:12,lowerExp:-9,upperExp:12});
+    return t.replace('e+','×10^').replace('e-','×10^-');
+  }
+  function say(msg,isErr){out.textContent=msg;out.className=isErr?'err':''}
+  function preview(){
+    var v=expr.value;if(!/[+\-×÷−^!%(√]|sin|cos|tan|log|ln/.test(v.slice(1))&&!/\)/.test(v)){say('');return}
+    try{say('= '+fmt(ev(v)))}catch(e){say('')}
+  }
+  function solve(){
+    var v=expr.value.trim();if(!v)return;
+    try{
+      var r=ev(v),t=fmt(r);
+      hist.unshift({e:v,r:t,t:Date.now()});hist=hist.slice(0,50);saveHist();renderHist();
+      expr.value=t.indexOf('×10^')>-1?String(r):t;say('= '+t);justSolved=true;
+    }catch(e){say('Check the expression: '+(e.message||'invalid input'),true)}
+  }
+
+  /* ---------- input ---------- */
+  function insert(t){
+    if(justSolved&&/^[0-9.π(]|^[a-z√]/.test(t)){expr.value='';}
+    justSolved=false;
+    var s=expr.selectionStart==null?expr.value.length:expr.selectionStart,e=expr.selectionEnd==null?s:expr.selectionEnd;
+    expr.setRangeText(t,s,e,'end');expr.focus({preventScroll:true});preview();
+  }
+  all('[data-ins]').forEach(function(b){b.addEventListener('click',function(){
+    insert(second&&b.dataset.alt?b.dataset.alt:b.dataset.ins);
+  })});
+  expr.addEventListener('input',function(){
+    expr.value=expr.value.replace(/\*/g,'×').replace(/\//g,'÷').replace(/-/g,'−');justSolved=false;
+    if(/[a-zπ√!^²³%]/i.test(expr.value))setSci(true);preview();
+  });
+  expr.addEventListener('keydown',function(e){
+    if(e.key==='Enter'){e.preventDefault();solve()}
+    else if(e.key==='Escape'){clearAll()}
+  });
+  function clearAll(){expr.value='';say('');justSolved=false;expr.focus({preventScroll:true})}
+  $('#kAC').onclick=clearAll;
+  $('#kEq').onclick=solve;
+  $('#kDel').onclick=function(){
+    var s=expr.selectionStart,e=expr.selectionEnd;
+    if(s===e&&s>0)expr.setRangeText('',s-1,s,'end');else expr.setRangeText('',s,e,'end');
+    expr.focus({preventScroll:true});justSolved=false;preview();
+  };
+  $('#kSign').onclick=function(){
+    var v=expr.value;expr.value=v.charAt(0)==='−'?v.slice(1):(v?'−'+v:'');preview();
+  };
+
+  /* ---------- toggles ---------- */
+  $('#k2nd').onclick=function(){
+    second=!second;this.setAttribute('aria-pressed',second);
+    all('[data-alt]').forEach(function(b){b.textContent=second?b.dataset.alt.replace('(','').replace('e^','eˣ').replace('10^','10ˣ'):b.dataset.label});
+  };
+  $('#kAng').onclick=function(){
+    deg=!deg;this.textContent=deg?'Deg':'Rad';
+    this.setAttribute('aria-label','Angle mode: '+(deg?'degrees':'radians'));
+    $('#angTag').textContent=deg?'DEG':'RAD';preview();toast(deg?'Degrees':'Radians');
+  };
+  all('[data-mem]').forEach(function(b){b.addEventListener('click',function(){
+    var k=b.dataset.mem;
+    if(k==='mr'){insert(String(memory));return}
+    if(k==='mc'){memory=0;toast('Memory cleared')}
+    else try{var n=Number(ev(expr.value||'0'));memory+= k==='m+'?n:-n;toast('Memory: '+memory)}catch(e){toast('Nothing to store')}
+    $('#memTag').hidden=memory===0;
+  })});
+  var modeBtn=$('#modeBtn');
+  function setSci(on){calc.classList.toggle('sci',on);modeBtn.setAttribute('aria-pressed',on)}
+  modeBtn.onclick=function(){setSci(!calc.classList.contains('sci'))};
+  function setTheme(t){
+    if(t)root.setAttribute('data-theme',t);
+    var dark=root.getAttribute('data-theme')?root.getAttribute('data-theme')==='dark':!matchMedia('(prefers-color-scheme: light)').matches;
+    document.querySelector('meta[name=theme-color]').content=dark?'#151a24':'#fbfcfe';
+  }
+  $('#themeBtn').onclick=function(){
+    var dark=root.getAttribute('data-theme')?root.getAttribute('data-theme')==='dark':!matchMedia('(prefers-color-scheme: light)').matches;
+    var t=dark?'light':'dark';setTheme(t);store('sr-theme',t);toast(t==='dark'?'Dark theme':'Light theme');
+  };
+  $('#shareBtn').onclick=function(){
+    var data={title:'SR Calculator',text:'A free scientific calculator that works on any device.',url:location.href.split('#')[0]};
+    if(navigator.share)navigator.share(data).catch(function(){});
+    else if(navigator.clipboard)navigator.clipboard.writeText(data.url).then(function(){toast('Link copied')},function(){toast('Copy the address bar link to share')});
+    else toast('Copy the address bar link to share');
+  };
+
+  /* ---------- history ---------- */
+  var panel=$('#histPanel'),hb=$('#histBtn');
+  function saveHist(){store('sr-hist',JSON.stringify(hist))}
+  function renderHist(){
+    var ul=$('#hist');ul.innerHTML='';
+    $('#histEmpty').hidden=hist.length>0;$('#hact').hidden=!hist.length;
+    hist.forEach(function(h){
+      var li=document.createElement('li'),b=document.createElement('button'),c=document.createElement('button');b.type=c.type='button';
+      var s=document.createElement('small'),r=document.createElement('b');
+      s.textContent=h.e+' =';r.textContent=h.r;b.appendChild(s);b.appendChild(r);
+      b.setAttribute('aria-label','Reuse '+h.e+' equals '+h.r);
+      b.onclick=function(){expr.value=h.r.indexOf('×10^')>-1?h.e:h.r;justSolved=true;preview();expr.focus();toast('Loaded from history')};
+      c.className='mini';c.textContent='Copy';c.setAttribute('aria-label','Copy result '+h.r);c.onclick=function(){copyText(h.r)};
+      li.appendChild(b);li.appendChild(c);ul.appendChild(li);
+    });
+  }
+  function histText(){return hist.map(function(h){return new Date(h.t||Date.now()).toLocaleString()+'  '+h.e+' = '+h.r}).join('\n')}
+  $('#cpAll').onclick=function(){copyText(histText(),'History copied')};
+  $('#shHist').onclick=function(){
+    var d={title:'SR Calculator history',text:'SR Calculator history\n'+histText()};
+    if(navigator.share)navigator.share(d).catch(function(){});else copyText(d.text,'History copied, ready to paste');
+  };
+  $('#prHist').onclick=function(){
+    var p=$('#printArea');p.innerHTML='<h1>SR Calculator – history</h1><p></p><table><thead><tr><th>Time</th><th>Calculation</th><th>Result</th></tr></thead><tbody></tbody></table>';
+    p.querySelector('p').textContent='Printed '+new Date().toLocaleString();
+    var tb=p.querySelector('tbody');
+    hist.forEach(function(h){var tr=tb.insertRow();tr.insertCell().textContent=new Date(h.t||Date.now()).toLocaleString();tr.insertCell().textContent=h.e;tr.insertCell().textContent=h.r});
+    try{window.print()}catch(e){toast('Printing is not available here. Use Copy all instead.')}
+  };
+  $('#clrHist').onclick=function(){hist=[];saveHist();renderHist();toast('History cleared')};
+  var histOpen=false,cur='calc',main=$('#top');
+  function sync(){
+    var isCalc=cur==='calc',on=isCalc&&(innerWidth>=900||histOpen);
+    panel.hidden=!on;main.classList.toggle('solo',!on);hb.hidden=!isCalc;hb.setAttribute('aria-expanded',isCalc&&histOpen);
+  }
+  function toggleHist(){
+    if(cur!=='calc')show('calc');
+    histOpen=!histOpen;sync();
+    if(histOpen&&innerWidth<900)panel.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'});
+  }
+  addEventListener('resize',sync);
+  hb.onclick=toggleHist;
+  document.addEventListener('keydown',function(e){if(e.altKey&&e.key.toLowerCase()==='h'){e.preventDefault();toggleHist()}});
+
+  /* ---------- toast ---------- */
+  var tt;function toast(m){var t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(tt);tt=setTimeout(function(){t.classList.remove('on')},1800)}
+
+  /* ---------- init ---------- */
+  try{hist=JSON.parse(store('sr-hist')||'[]')||[]}catch(e){hist=[]}
+  renderHist();
+  var th=store('sr-theme');if(th)setTheme(th);else setTheme();
+  /* ---------- copy ---------- */
+  function copyText(t,ok){
+    function fb(){var ta=document.createElement('textarea');ta.value=t;ta.style.cssText='position:fixed;opacity:0';document.body.appendChild(ta);ta.select();
+      try{document.execCommand('copy');toast(ok||'Copied')}catch(e){toast('Select the text and press Ctrl+C')}ta.remove()}
+    if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t).then(function(){toast(ok||'Copied')},fb);else fb();
+  }
+  $('#cpRes').onclick=function(){var t=out.textContent.replace(/^= /,'');t&&!out.classList.contains('err')?copyText(t):toast('Nothing to copy yet')};
+  all('.cp').forEach(function(b){b.onclick=function(){
+    var t=b.dataset.cp.split(' ').map(function(i){var e=$('#r-'+i);return e.dataset.text||e.textContent}).filter(Boolean).join('\n');
+    t?copyText(t):toast('Nothing to copy yet');
+  }});
+
+  /* ---------- menu and views ---------- */
+  var VIEWS=['calc','matrix','eq','num','bmi','pct','emi'],menu=$('#menu'),mb=$('#menuBtn');
+  function viewEl(v){return v==='calc'?calc:$('#v-'+v)}
+  function show(v){
+    cur=v;VIEWS.forEach(function(x){viewEl(x).hidden=x!==v});
+    all('#menu button').forEach(function(b){b.setAttribute('aria-current',b.dataset.v===v)});
+    modeBtn.hidden=v!=='calc';sync();scrollTo(0,0);
+    if(v==='calc')expr.focus({preventScroll:true});else viewEl(v).querySelector('h2').focus({preventScroll:true});
+  }
+  function closeMenu(){menu.hidden=true;mb.setAttribute('aria-expanded','false')}
+  mb.onclick=function(){var o=menu.hidden;menu.hidden=!o;mb.setAttribute('aria-expanded',o);if(o)menu.querySelector('button').focus()};
+  all('#menu button').forEach(function(b){b.onclick=function(){show(b.dataset.v);closeMenu()}});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!menu.hidden){closeMenu();mb.focus()}});
+  document.addEventListener('click',function(e){if(!menu.hidden&&!menu.contains(e.target)&&!mb.contains(e.target))closeMenu()});
+
+  /* ---------- tools ---------- */
+  function num(id){var v=parseFloat($(id).value);return isNaN(v)?null:v}
+  function R(id,t,err){var e=$('#r-'+id);e.textContent=t;e.dataset.text=t;e.className='res'+(err?' err':'')}
+  function nf(x){return String(+x.toFixed(10))}
+  function mo(x){return x.toLocaleString(undefined,{maximumFractionDigits:2})}
+  function fld(id,l){return '<label class="f">'+l+'<input type="number" step="any" inputmode="decimal" id="'+id+'"></label>'}
+
+  /* matrix */
+  var mN=$('#mN'),mOp=$('#mOp');
+  function grid(id,n,l){var g=$('#'+id);g.style.gridTemplateColumns='repeat('+n+',minmax(0,1fr))';g.innerHTML='';
+    for(var i=0;i<n*n;i++){var x=document.createElement('input');x.type='number';x.step='any';x.placeholder='0';x.inputMode='decimal';
+      x.setAttribute('aria-label','Matrix '+l+', row '+(Math.floor(i/n)+1)+', column '+(i%n+1));g.appendChild(x)}}
+  function mRead(id){var n=+mN.value,v=[].map.call($('#'+id).children,function(x){return parseFloat(x.value)||0}),m=[];for(var i=0;i<n;i++)m.push(v.slice(i*n,i*n+n));return m}
+  function mVis(){$('#mBwrap').hidden=['add','sub','mul'].indexOf(mOp.value)<0}
+  function mBuild(){var n=+mN.value;grid('mA',n,'A');grid('mB',n,'B');mVis();R('m','')}
+  function mCalc(){
+    var A=mRead('mA'),B=mRead('mB'),o=mOp.value,r,e=$('#r-m');
+    try{
+      if(o==='det')r=math.det(A);
+      else if(o==='inv'){if(Math.abs(math.det(A))<1e-12){R('m','Matrix A has no inverse because its determinant is 0.',1);return}r=math.inv(A)}
+      else if(o==='tr')r=math.transpose(A);
+      else if(o==='add')r=math.add(A,B);else if(o==='sub')r=math.subtract(A,B);else r=math.multiply(A,B);
+    }catch(x){R('m','Could not calculate. Check the entries.',1);return}
+    if(!Array.isArray(r)){R('m','Determinant = '+nf(r));return}
+    var t=document.createElement('table');
+    r.forEach(function(row){var tr=t.insertRow();row.forEach(function(x){tr.insertCell().textContent=nf(x)})});
+    e.className='res';e.textContent='';e.appendChild(t);e.dataset.text=r.map(function(row){return row.map(nf).join('\t')}).join('\n');
+  }
+  mN.onchange=mBuild;
+  $('#v-matrix').addEventListener('input',function(e){if(e.target!==mN){mVis();mCalc()}});
+
+  /* equations */
+  var eqT=$('#eqT'),eqIn=$('#eqIn');
+  function eqBuild(){var t=eqT.value;
+    eqIn.innerHTML=t==='l2'?'<div class="row3">'+fld('e1','a₁ (x)')+fld('e2','b₁ (y)')+fld('e3','c₁ (answer)')+fld('e4','a₂ (x)')+fld('e5','b₂ (y)')+fld('e6','c₂ (answer)')+'</div><p class="note">Each line has the form a x + b y = c</p>'
+    :'<div class="row3">'+fld('e1','a')+fld('e2','b')+fld('e3','c')+'</div><p class="note">'+(t==='q'?'Form: a x² + b x + c = 0':'Form: a x + b = c')+'</p>';
+    R('eq','');
+  }
+  function eqSolve(){
+    var t=eqT.value,v=[1,2,3,4,5,6].slice(0,t==='l2'?6:3).map(function(i){return num('#e'+i)});
+    if(v.every(function(x){return x===null}))return R('eq','');
+    var z=v.map(function(x){return x||0}),a=z[0],b=z[1],c=z[2],d=z[3],e=z[4],f=z[5],s;
+    if(t==='q'){
+      if(a===0)return R('eq','a must not be zero in a quadratic. Choose the linear type instead.',1);
+      var D=b*b-4*a*c,re=-b/(2*a);
+      if(D>0)s='Two real roots\nx₁ = '+nf((-b+Math.sqrt(D))/(2*a))+'\nx₂ = '+nf((-b-Math.sqrt(D))/(2*a));
+      else if(D===0)s='One repeated root\nx = '+nf(re);
+      else{var im=nf(Math.abs(Math.sqrt(-D)/(2*a)));s='Two complex roots\nx₁ = '+nf(re)+' + '+im+'i\nx₂ = '+nf(re)+' − '+im+'i'}
+      s+='\nDiscriminant = '+nf(D);
+    }else if(t==='l1')s=a===0?(b===c?'Every value of x works.':'There is no solution.'):'x = '+nf((c-b)/a);
+    else{var det=a*e-d*b;
+      s=det!==0?'x = '+nf((c*e-f*b)/det)+'\ny = '+nf((a*f-d*c)/det):((a*f-d*c===0&&c*e-f*b===0)?'Infinitely many solutions.':'There is no solution.')}
+    R('eq',s);
+  }
+  eqT.onchange=eqBuild;
+  $('#v-eq').addEventListener('input',function(e){if(e.target!==eqT)eqSolve()});
+
+  /* number tools */
+  function nb(){
+    var v=$('#nbV').value.trim().toLowerCase(),f=+$('#nbF').value;if(!v)return R('nb','');
+    if(!({2:/^[01]+$/,8:/^[0-7]+$/,10:/^\d+$/,16:/^[0-9a-f]+$/})[f].test(v))return R('nb','That is not a valid base '+f+' number.',1);
+    var n=parseInt(v,f);if(n>Number.MAX_SAFE_INTEGER)return R('nb','That number is too large for this tool.',1);
+    R('nb','Binary: '+n.toString(2)+'\nOctal: '+n.toString(8)+'\nDecimal: '+n+'\nHexadecimal: '+n.toString(16).toUpperCase());
+  }
+  function pn(){
+    var n=num('#pnV');if(n===null)return R('pn','');
+    if(!Number.isInteger(n)||n<2||n>1e12)return R('pn','Enter a whole number from 2 to 1,000,000,000,000.',1);
+    var m=n,fs=[],p=2,k;
+    for(;p*p<=m;p++){k=0;while(m%p===0){m/=p;k++}if(k)fs.push(p+(k>1?String(k).replace(/\d/g,function(d){return '⁰¹²³⁴⁵⁶⁷⁸⁹'[d]}):''))}
+    if(m>1)fs.push(m);
+    var prime=fs.length===1&&fs[0]==n;
+    R('pn',n+' is '+(prime?'a prime number':'not a prime number')+'\n'+(n%2?'Odd':'Even')+(prime?'':'\nPrime factors: '+fs.join(' × ')));
+  }
+  function gl(){
+    var a=$('#glV').value.split(/[\s,;]+/).filter(Boolean).map(Number);if(!a.length)return R('gl','');
+    if(a.length<2||a.some(function(x){return !Number.isInteger(x)||x<1}))return R('gl','Enter two or more whole numbers, separated by commas.',1);
+    var g=function(x,y){return y?g(y,x%y):x},G=a.reduce(g),L=a.reduce(function(x,y){return x/g(x,y)*y});
+    R('gl',Number.isSafeInteger(L)?'GCD (HCF): '+G+'\nLCM: '+L:'Those numbers are too large for this tool.',!Number.isSafeInteger(L));
+  }
+  $('#v-num').addEventListener('input',function(){nb();pn();gl()});
+  $('#nbF').onchange=nb;
+
+  /* BMI */
+  function bmi(){
+    var imp=$('#bU').value==='i';$('#bWl').textContent='Weight ('+(imp?'lb':'kg')+')';$('#bHl').textContent='Height ('+(imp?'in':'cm')+')';
+    var w=num('#bW'),h=num('#bH');if(w===null&&h===null)return R('bmi','');
+    if(!(w>0&&h>0))return R('bmi','Enter your weight and height.',1);
+    var m=imp?h*0.0254:h/100,b=(imp?w*0.45359237:w)/(m*m),f=imp?2.2046226:1;
+    R('bmi','BMI: '+b.toFixed(1)+' ('+(b<18.5?'Underweight':b<25?'Healthy weight':b<30?'Overweight':'Obese')+')\nHealthy range for your height: '+(18.5*m*m*f).toFixed(1)+' to '+(24.9*m*m*f).toFixed(1)+(imp?' lb':' kg'));
+  }
+  $('#v-bmi').addEventListener('input',bmi);
+
+  /* percentage */
+  function pct(){
+    var a=num('#p1a'),b=num('#p1b');R('p1',a!==null&&b!==null?a+'% of '+b+' = '+nf(a/100*b):'');
+    a=num('#p2a');b=num('#p2b');R('p2',a!==null&&b?a+' is '+nf(a/b*100)+'% of '+b:'');
+    a=num('#p3a');b=num('#p3b');
+    R('p3',a!==null&&b!==null&&a!==0?(b>=a?'Increase of ':'Decrease of ')+nf(Math.abs((b-a)/a*100))+'%':'');
+  }
+  $('#v-pct').addEventListener('input',pct);
+
+  /* loan */
+  function emi(){
+    var P=num('#lP'),r=num('#lR'),t=num('#lN');if(P===null&&r===null&&t===null)return R('emi','');
+    if(!(P>0&&t>0)||r===null||r<0)return R('emi','Enter the loan amount, the yearly interest rate and the term.',1);
+    var n=Math.round($('#lU').value==='y'?t*12:t),i=r/1200;if(n<1)return R('emi','The term must be at least one month.',1);
+    var E=i===0?P/n:P*i*Math.pow(1+i,n)/(Math.pow(1+i,n)-1);
+    R('emi','Monthly payment (EMI): '+mo(E)+'\nTotal interest: '+mo(E*n-P)+'\nTotal to repay: '+mo(E*n));
+  }
+  $('#v-emi').addEventListener('input',emi);
+
+  eqBuild();mBuild();sync();
+  expr.focus({preventScroll:true});
+})();
+</script>
+</body>
+</html>
